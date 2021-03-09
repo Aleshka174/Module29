@@ -1,0 +1,15 @@
+<?php 
+require_once 'C:\xampp\php\vendor\autoload.php';
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+use Monolog\Formatter\HtmlFormatter;
+
+// Создаем логгер 
+$log = new Logger('mylogger');
+
+$log->pushHandler(new StreamHandler('logs/logs.log', Logger::DEBUG));
+
+
+
+
+ ?>
